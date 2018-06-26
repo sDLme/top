@@ -14,7 +14,6 @@ wp-content/plugins/hello.php
 wp-content/uploads/
 
 node_modules/
-wp-content/themes
 
 /readme.html
 /license.txt
