@@ -1,0 +1,51 @@
+
+$large-text: 32px;
+$medium-text: 24px;
+$small-text: 16px;
+
+$bold-text: 600;
+$thin-text: 400;
+
+$main-color: #FF8563;
+$text-color: #184850;
+
+h1, h2, h3, h4, h5, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.text {
+  font-family: 'Helvetica', Arial, serif;
+  &-dark {
+    color: $text-color;
+  }
+  &-large {
+    font-size: $large-text;
+ }
+  &-medium {
+    font-size: $medium-text;
+  }
+  &-small {
+    font-size: $small-text;
+  }
+  &-bold {
+    font-weight:$bold-text ;
+  }
+  &-thin {
+    font-weight: $thin-text;
+  }
+}
+
+.alight {
+  &-center {
+    text-align: center;
+  }
+}

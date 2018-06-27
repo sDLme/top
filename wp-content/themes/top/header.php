@@ -12,12 +12,20 @@
 </head>
 <body <?php body_class(); ?>>
 
-<header>
+<header class="site-head">
     <div class="container">
-        <h1 class="site-title col-md-2"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-        <div class="main-menu col-md-10">
-            <?php wp_nav_menu(['theme_location' => 'main-menu', 'menu_id' => 'main-menu']); ?>
+        <h1 class="site-title col-md-4 col-xs-9"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="text-medium"><?php bloginfo( 'name' ); ?></a></h1>
+        <span class="glyphicon">&#xe055;</span>
+        <div class="main-menu col-md-8  col-sm-12 col-xs-12">
+            <?php
+            wp_nav_menu(array(
+                'theme_location' => 'main-menu',
+                'menu_id' => 'main-menu',
+                'container' => false
+            ));
+            ?>
         </div>
     </div>
 </header>
+
 

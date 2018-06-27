@@ -4,11 +4,11 @@
  */
 get_header();
 ?>
-<section>
+<section class="section-last">
     <div class="container">
-        <header>
-            <h2 class="main-title"><?php echo get_theme_mod('last_news_title'); ?></h2>
-            <p class="main-desc"><?php echo get_theme_mod('last_news_text'); ?></p>
+        <header class=" alight-center">
+            <h2 class="main-head text-large text-dark text-bold"><?php echo get_theme_mod('last_news_title'); ?></h2>
+            <p class="main-desc text-dark"><?php echo get_theme_mod('last_news_text'); ?></p>
         </header>
         <?php
         $last_query = new WP_Query(array(
@@ -25,13 +25,18 @@ get_header();
                 endwhile; ?>
             </ul>
         <?php endif; ?>
+
+            <a class="alight-center main-btn">
+                View All Text
+            </a>
+
     </div>
 </section>
-<section>
+<section class="section-old">
     <div class="container">
-        <header>
-            <h2 class="main-title"><?php echo get_theme_mod('old_news_title'); ?></h2>
-            <p class="main-desc"><?php echo get_theme_mod('old_news_text'); ?></p>
+        <header class=" alight-center">
+            <h2 class=" main-head text-large text-dark text-bold"><?php echo get_theme_mod('old_news_title'); ?></h2>
+            <p class="main-desc text-dark"><?php echo get_theme_mod('old_news_text'); ?></p>
         </header>
         <?php
         $last_query = new WP_Query(array(
@@ -47,10 +52,14 @@ get_header();
                 endwhile; ?>
             </ul>
         <?php endif; ?>
+        <a class="alight-center main-btn">
+            View All Text
+        </a>
     </div>
 </section>
 <?php
 wp_footer();
 ?>
+
 </body>
 </html>
