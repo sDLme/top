@@ -4,20 +4,15 @@ var gulp = require('gulp'),
 
 var gSrc = {
     scss: [
-        'src/sass/main.scss',
+        'src/sass/main.scss'
     ],
     js: [
-        'src/libs/js/bootstrap.min.js',
-        'src/libs/js/bootstrap.bundle.min.js',
         'src/js/*.js'
-    ],
-    images: [
-        'wp-content/themes/ekreative/web-src/images/**/*.{gif,jpg,png,svg}'
     ]
 };
 var gDst = {
     styles: 'dist/css',
-    js: 'dist/js',
+    js: 'dist/js'
 };
 
 gulp.task('js', function(){

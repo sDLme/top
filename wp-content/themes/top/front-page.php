@@ -24,12 +24,9 @@ get_header();
                     get_template_part('template-parts/content', 'part');
                 endwhile; ?>
             </ul>
-        <?php endif; ?>
-
-            <a class="alight-center main-btn">
-                View All Text
-            </a>
-
+        <?php endif;
+        get_template_part('template-parts/content', 'btn');
+        ?>
     </div>
 </section>
 <section class="section-old">
@@ -51,10 +48,9 @@ get_header();
                     get_template_part('template-parts/content', 'part');
                 endwhile; ?>
             </ul>
-        <?php endif; ?>
-        <a class="alight-center main-btn">
-            View All Text
-        </a>
+        <?php endif;
+        get_template_part('template-parts/content', 'btn');
+        ?>
     </div>
 </section>
 <?php

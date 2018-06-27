@@ -35,7 +35,6 @@ function top_scripts() {
 
     wp_deregister_script('jquery');
     wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
-
     wp_enqueue_script( 'top-script', get_stylesheet_directory_uri().'/dist/js/main.js', ['jquery'] );
 
     wp_enqueue_style( 'top-bootstarp-style',  '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'  );
