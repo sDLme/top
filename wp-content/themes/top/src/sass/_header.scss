@@ -1,0 +1,52 @@
+.site-head {
+  position: relative;
+  padding: 20px 0;
+  box-shadow: -1px 34px 54px -30px rgba(0, 0, 0, 0.54);
+}
+
+.site-title a {
+  color: $main-color;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+
+.active {
+  display: flex;
+}
+
+.menu-item {
+  padding: 11px;
+  & a:hover {
+    color: $main-color;
+  }
+  &:last-child {
+    @extend .main-btn;
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+    a {
+      color: #ffffff;
+    }
+    &:hover a {
+      color: $main-color;
+    }
+  }
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+}
+
+.glyphicon {
+  float: right;
+  padding-top: 17px;
+  @media (min-width: 992px) {
+    display: none;
+  }
+}

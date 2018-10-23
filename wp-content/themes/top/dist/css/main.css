@@ -1,0 +1,133 @@
+h1, h2, h3, h4, h5, p, ul, li {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+a:hover,
+a:active {
+  text-decoration: none; }
+
+.text {
+  font-family: 'Helvetica', Arial, serif; }
+  .text-dark {
+    color: #184850; }
+  .text-large {
+    font-size: 32px; }
+  .text-medium {
+    font-size: 24px; }
+  .text-small {
+    font-size: 16px; }
+  .text-bold {
+    font-weight: 600; }
+  .text-thin {
+    font-weight: 400; }
+
+.alight-center {
+  text-align: center; }
+
+.main-btn, .menu-item:last-child {
+  display: block;
+  max-width: 116px;
+  width: 100%;
+  margin: 23px auto;
+  padding: 7px 14px;
+  background: #FF8563;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  color: #ffffff; }
+  .main-btn:hover, .menu-item:hover:last-child {
+    background: transparent;
+    color: #FF8563;
+    border: 1px solid #FF8563;
+    cursor: pointer; }
+
+.site-head {
+  position: relative;
+  padding: 20px 0;
+  -webkit-box-shadow: -1px 34px 54px -30px rgba(0, 0, 0, 0.54);
+  box-shadow: -1px 34px 54px -30px rgba(0, 0, 0, 0.54); }
+
+.site-title a {
+  color: #FF8563; }
+
+.main-head {
+  position: relative;
+  padding-bottom: 10px; }
+  .main-head:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 60px;
+    height: 5px;
+    background: #FF8563;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+
+.main-desc {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0 35px; }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  @media (max-width: 991px) {
+    .menu {
+      display: none; } }
+
+.menu-item {
+  padding: 11px; }
+  .menu-item a:hover {
+    color: #FF8563; }
+  .menu-item:last-child {
+    margin: 0;
+    padding-top: 10px;
+    text-align: center; }
+    .menu-item:last-child a {
+      color: #ffffff; }
+    .menu-item:last-child:hover a {
+      color: #FF8563; }
+  @media (max-width: 991px) {
+    .menu-item {
+      width: 100%; } }
+
+.glyphicon {
+  float: right;
+  padding-top: 17px; }
+  @media (min-width: 992px) {
+    .glyphicon {
+      display: none; } }
+
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.data {
+  position: relative;
+  padding: 12px 0;
+  border-bottom: 1px solid #f1faff; }
+  .data span {
+    padding-right: 15px; }
+
+.artic-title {
+  padding: 15px 0; }
+
+.img-wrapp img {
+  width: 100%;
+  height: auto; }
+
+.section-last,
+.section-old {
+  padding: 50px 0; }

@@ -1,0 +1,17 @@
+.main-btn {
+  display: block;
+  max-width: 116px;
+  width: 100%;
+  margin: 23px auto;
+  padding: 7px 14px;
+  background: $main-color;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  color: #ffffff;
+  &:hover {
+    background: transparent;
+    color: $main-color;
+    border: 1px solid $main-color;
+    cursor: pointer;
+  }
+}

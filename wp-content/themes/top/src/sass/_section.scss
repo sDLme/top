@@ -1,0 +1,26 @@
+.section-last,
+.section-old {
+  padding: 50px 0;
+}
+
+.main-head {
+  position: relative;
+  padding-bottom: 10px;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 60px;
+    height: 5px;
+    background: $main-color;
+    transform: translateX(-50%);
+  }
+}
+
+.main-desc {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0 35px;
+}
